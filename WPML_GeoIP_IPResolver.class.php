@@ -32,16 +32,11 @@ class WPML_GeoIP_IPResolver
 
 		//Array with structure MaxMind Code => WPML Code
 		$this->language_mappings = array(
-			'SE' => 'sv', //Sweden
-			'NO' => 'nb', //Norway
-			'FI' => 'fi', //Finland
-			'DK' => 'da', //Denmark
-			'US' => 'en', //USA
-			'CA' => 'en'  //Canada
+			'IL' => 'he'  //Israel
 		);
 
 		//Set the default WPML language which is used if no matching language is found
-		$this->default_language = 'sv';
+		$this->default_language = 'en';
 		
 		//Make sure to not redeclare the GeoIP API if it is loaded already.
 		if(!function_exists('geoip_country_code_by_addr')) 
